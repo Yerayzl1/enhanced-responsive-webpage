@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Responsive Webpage Example</title>
+    <link href="/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100">
+
+  <nav class="bg-blue-500 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-white font-bold text-4xl">My Enhanced Website</div>
+      <div class="hidden md:flex space-x-4">
+        <a href="#" class="text-white">Home</a>
+        <a href="#" class="text-white">About</a>
+        <a href="#" class="text-white">Services</a>
+        <a href="#" class="text-white">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bg-gray-800 text-white py-20 text-center">
+    <div class="container mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to My Enhanced Website</h1>
+      <p class="text-lg md:text-xl">Discover amazing content and services. Tailwind makes it magical!</p>
+    </div>
+  </section>
+
+  <section class="py-12">
+    <div class="container mx-auto grid gap-8 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-bold mb-2">Featured Item 1</h2>
+        <p class="text-gray-600 mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id
+          feugiat velit.
+        </p>
+        <img class="w-full h-40 object-cover rounded-lg" src="./img/image1.jpg" alt="Featured Item 1" />
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-bold mb-2">Featured Item 2</h2>
+        <p class="text-gray-600 mb-4">
+          Nulla facilisi. Sed euismod mauris at justo varius, ac ultricies elit posuere.
+        </p>
+        <img class="w-full h-40 object-cover rounded-lg" src="./img/image2.jpg" alt="Featured Item 2" />
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-bold mb-2">Featured Item 3</h2>
+        <p class="text-gray-600 mb-4">
+          Quisque euismod elit eu felis vestibulum, vitae mattis tortor sodales.
+        </p>
+        <img class="w-full h-40 object-cover rounded-lg" src="./img/image3.jpg" alt="Featured Item 3" />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-gray-50">
+    <div class="container mx-auto max-w-lg bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold mb-6 text-center">Contact Us</h2>
+      <form action="#" method="POST">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
+          <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded-lg" />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+          <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded-lg" />
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700 font-bold mb-2">Message:</label>
+          <textarea id="message" name="message" rows="4" class="w-full p-2 border border-gray-300 rounded-lg"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600">Send Message</button>
+      </form>
+    </div>
+  </section>
+  </body>
+</html>
